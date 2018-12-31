@@ -8,7 +8,8 @@ export default function SearchForm(props) {
         type="search"
         id="search"
         name="search"
-        placeholder="Brian Thomas"
+        placeholder="Type a name"
+        onChange={e => props.onChange(e.target.value)}
       />
     </form>
   );
